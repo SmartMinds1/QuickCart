@@ -1,3 +1,74 @@
+/* Global Reset & Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-base);
+}
+
+/* Global CSS Variables */
+:root {
+/*  light mode colors */
+  --background:#ffffff;
+  --text:#000000;
+  --primary:#388e3c;
+  --secondary:#ffc107;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* padding */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Z-Index Layers */
+  --z-index-header: 1000;
+  --z-index-modal: 1050;
+  --z-index-dropdown: 1100;
+  --z-index-tooltip: 1200;
+
+  /* Breakpoints for responsive design */
+  --max-width-container: 1200px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+
+  /* border radius */
+  --border-radius-sm: 4px;
+  --border-radius-lg: 16px;
+
+
+  /* others */
+  --transition: 0.3s ease-in-out;
+  --button-padding: 0.5rem 1rem;
+  --input-padding: 0.5rem;
+}
+:root.dark-mode {
+/*  light mode colors */
+  --background: #121212;
+  --text: #ffffff; 
+  --primary: #66bb6a;     
+  --secondary: #ffca28; 
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* html body set uP */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
