@@ -1,0 +1,211 @@
+  
+  /* Container */
+  .auth-container {
+    background-color:  rgb(234, 245, 255);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width:21.875rem;
+    backdrop-filter: blur(20px);
+    height: fit-content;
+    text-align: center;
+
+  }
+  .helpOption{
+    color: rgb(0, 0, 187);
+    font-size: 0.875rem;
+  }
+  .helpOption p:hover{
+    color: #4d4dfc;
+    cursor: pointer;
+  }
+
+  .googleIcon{
+    font-size: 1rem;
+  }
+  .googlep span:hover{
+    color: #4d4dfc;
+    cursor: pointer;
+  }
+
+  /* Header */
+  .auth-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color:var(--text);
+  }
+   .auth-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  /*   color: black; */
+
+  }
+  .headerMessage{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:27rem;
+    height: 2.5rem;
+  }
+
+  .headerMessage h3{
+    font-size: 1.1rem;
+  }
+   .auth-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    color: #6f7b8f;
+  }
+   .auth-close-btn:hover {
+    color: rgb(41, 39, 39);
+  }
+
+
+  /* Form Elements */
+   .auth-input-group {
+    margin-bottom: 16px;
+  }
+  
+  
+   .auth-input-group input {
+    background-color:transparent;
+    color:black;
+    width: 90%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid var(--text);
+   /*  border-radius: 6px; */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: border-bottom 0.2s, box-shadow 0.2s;
+  }
+  
+   .auth-input-group input:focus {
+    border-bottom: 1px solid var(--secondary);
+    outline: none;
+  }
+
+  /* This is for the password EYE ICON  for login*/
+  .password-toggle-icon-login {
+    position: absolute;
+    right: 50px;
+    top: 37%;
+    cursor: pointer;
+    color: #555;
+    font-size: 1rem;
+  }
+  /* This is for the password EYE ICON for register */
+  .password-toggle-icon-register {
+    position: absolute;
+    right: 50px;
+    top: 42%;
+    cursor: pointer;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Submit Button for the popUp */
+   .auth-submit-btn {
+    width: 90%;
+    background-color: var(--text);
+    color: aliceblue;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 200ms;
+    margin: 1rem 0 1rem 0;
+  }
+  
+   .auth-submit-btn:hover {
+    filter: brightness(0.9);
+  }
+  .authOption{
+    color:rgb(48, 47, 49);
+    font-size: 1.2rem;
+  }
+
+  .authOption span{
+      cursor: pointer;
+      color: black;
+      transition: all 300ms;
+    }
+    
+    .authOption span:hover{
+        color: rgb(4, 4, 170);
+  }
+
+  /* This is for the forgot password section */
+  .forgot-password-link {
+    color: #2e2c25;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: right;
+    display: block;
+    margin-top: 0.5rem;
+    
+  }
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+ /*  login failed alert */
+ .loginFailed span{
+  font-weight: bold;
+ }
+.forgotH2{
+  margin-bottom: 1.5rem;
+}
+.logo{
+  color:var(--text);
+}
+  /* Now making my website more responsive */
+/*Mobiles and Tablets*/ 
+@media (max-width: 767px){
+  /* Container */
+  .auth-container {
+    min-width: 290px;
+    max-width: 400px;
+
+  }
+
+  .headerMessage{
+    width:15rem;
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  
+   .auth-input-group input {
+    width: 90%;
+    }
+
+  /* This is for the password EYE ICON  for login*/
+  .password-toggle-icon-login {
+    right: 40px;
+    top: 33%;
+  }
+  /* This is for the password EYE ICON for register */
+  .password-toggle-icon-register {
+    right: 40px;
+    top: 47%;
+
+  }
+  
+  /* Submit Button for the popUp */
+   .auth-submit-btn {
+    width: 60%;
+  }
+
+  .authOption{
+    font-size: 1.1rem;
+  }
+
+}
