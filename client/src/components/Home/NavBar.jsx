@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaShoppingCart, FaUser } from 'react-icons/fa';
 import './NavBar.css';
 import "../../styles/loginSignUp.css";
@@ -6,7 +7,6 @@ import Modal from "../popUps/Modal";
 import SignUp from  "../../pages/SignUp";
 import SignIn from "../../pages/SignIn";
 import ForgotPassword from '../../pages/ForgotPassword';
-
 
 
 const NavBar = () => {
@@ -51,10 +51,10 @@ const NavBar = () => {
          {/* Desktop Navigation */}
           <div className="navbar-links">
               <ul className="page-links">
-                <li>Home</li>
-                <li>Products</li>
-                <li>Categories</li>
-                <li>About</li>
+                <li> <Link to="/"><h4></h4>home  </Link>        </li>
+                <li> <Link to="/orders"> orders</Link> </li>
+                <li> <Link to="/categories">categories  </Link>        </li>
+                <li> <Link to="/about"> about</Link> </li>
               </ul>
 
               <ul className="auth-links">
@@ -87,10 +87,10 @@ const NavBar = () => {
       {isOpen && (
         <div className="mobile-menu">
           <ul>
-              <li>Home</li>
-              <li>Products</li>
-              <li>Categories</li>
-              <li>About</li>
+              <li> <Link to="/"><h4></h4>ome  </Link>        </li>
+              <li> <Link to="/orders"> orders</Link> </li>
+              <li> <Link to="/categories">categories  </Link>        </li>
+              <li> <Link to="/about"> about</Link> </li>
           </ul>
 
     {/* smartminds auth links */}
