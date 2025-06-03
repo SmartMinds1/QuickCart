@@ -70,7 +70,7 @@
     position: absolute;
     top: -4px;
     right: -4px;
-    background-color: #4f46e5; /* indigo-600 */
+    background-color:var(--primary); /* indigo-600 */
     color: white;
     font-size: 0.75rem;
     border-radius: 50%;
