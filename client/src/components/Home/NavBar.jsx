@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaShoppingCart, FaUser } from 'react-icons/fa';
 import './NavBar.css'; 
+import { Link } from 'react-router-dom';
+import Contacts from '../../pages/Contact/Contacts';
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +18,7 @@ const NavBar = () => {
         <div className="navbar-links">
           <a href="#">Home</a>
           <a href="#">Products</a>
-          <a href="#">Categories</a>
+          <Link to="contact">Contacts</Link>
           <a href="#">About</a>
         </div>
 
