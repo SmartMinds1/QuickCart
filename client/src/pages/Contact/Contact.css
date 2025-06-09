@@ -134,6 +134,16 @@ label {
   transition: border-color 0.3s ease;
 }
 
+.input-field-mes {
+  width: 100%;
+  height: 100px;
+  padding: 10px 14px;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
 .input-field:focus {
   border-color: #007bff;
   outline: none;
@@ -142,7 +152,8 @@ label {
 .send-button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
+  
+  background-color: #4f46e5;
   color: white;
   font-weight: 600;
   border: none;
@@ -153,8 +164,85 @@ label {
 }
 
 .send-button:hover {
-  background-color: #0056b3;
+  background-color: #4f46e5;
 }
+/* FAQ Section */
+.faq-section {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.faq-list li {
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-left: 4px solid #4f46e5;
+  background-color: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+ 
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+ 
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonial::before {
+  content: "❝";
+  font-size: 2rem;
+  color: #4f46e5;
+  position: absolute;
+  left: -1.5rem;
+  top: -0.2rem;
+}
+
 
 /* Responsive for smaller screens */
 @media screen and (max-width: 768px) {

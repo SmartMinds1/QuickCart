@@ -36,18 +36,46 @@ Nairobi, KE 10001</span>
   <h1 className="title">Send Us a Message</h1>
 
   <label>Your Name</label>
-  <input type="text" className="input-field" />
+  <input type="text" className="input-field" placeholder='Enter your Name' />
 
   <label>Email Address</label>
-  <input type="text" className="input-field" />
+  <input type="text" className="input-field" placeholder='Enter your Email' />
 
   <label>Subject</label>
-  <input type="text" className="input-field" />
+  <input type="text" className="input-field" placeholder='Enter your Subject' />
 
   <label>Message</label>
-  <input type="text" className="input-field" />
+  <input type="text" className="input-field-mes" placeholder='Enter your message here!' />
 
   <button className="send-button">Send Message</button>
+</div>
+
+<div className="faq-section">
+  <h2 className="faq-title"> Frequently Asked Questions</h2>
+  <ul className="faq-list">
+    <li>
+      <p className="faq-question">How long does it take to get a reply?</p>
+      <p className="faq-answer">We usually respond within 24 hours.</p>
+    </li>
+    <li>
+      <p className="faq-question">Do you offer customer support on weekends?</p>
+      <p className="faq-answer">Yes, we offer limited support during weekends.</p>
+    </li>
+    <li>
+      <p className="faq-question">Can I visit your office without an appointment?</p>
+      <p className="faq-answer">We recommend calling ahead to schedule your visit.</p>
+    </li>
+  </ul>
+</div>
+
+<div className="testimonials-section">
+  <h2 className="testimonials-title">What Our Clients Say!</h2>
+  <blockquote className="testimonial">
+    “The support team was super helpful and friendly!” – Sarah M.
+  </blockquote>
+  <blockquote className="testimonial">
+    “Very professional service. Will contact again.” – Daniel K.
+  </blockquote>
 </div>
 
       </div>
