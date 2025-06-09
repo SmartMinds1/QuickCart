@@ -1,6 +1,6 @@
 import React from "react";
 
-const Categories = ()=>{
+const Contact = ()=>{
     return(
         <>
           <h1>This is the Categories page</h1>
@@ -8,4 +8,6 @@ const Categories = ()=>{
     );
 }
 
-export default Categories;
+export default Contact;
+
+

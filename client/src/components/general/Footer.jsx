@@ -2,9 +2,12 @@ import React from "react";
 
 const Footer = ()=>{
     return(
-        <>
-        <h1>............THIS IS THE FOOTER SECTION..............</h1>
-        </>
+        <div className="footer">
+            <h1 className="footerHead">
+                
+                     .........THIS IS THE FOOTER SECTION.............
+            </h1>
+        </div>
     )
 }
 

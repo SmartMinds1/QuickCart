@@ -7,9 +7,15 @@ import Modal from "../popUps/Modal";
 import SignUp from  "../../pages/SignUp";
 import SignIn from "../../pages/SignIn";
 import ForgotPassword from '../../pages/ForgotPassword';
+import { useCart } from "../../context/CartContext"; //For accessing the item count from the main context
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 
-const NavBar = () => {
+const NavBar = ({hideProducts}) => {
+  const { cartItems } = useCart(); //Accessesing cartItems from the CartContext
+  const totalCount = cartItems.reduce((sum, item) => sum + item.count, 0);
+
   //This is for the mobile 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -51,34 +57,41 @@ const NavBar = () => {
          {/* Desktop Navigation */}
           <div className="navbar-links">
               <ul className="page-links">
-                <li> <Link to="/"><h4></h4>home  </Link>        </li>
-                <li> <Link to="/orders"> orders</Link> </li>
-                <li> <Link to="/categories">categories  </Link>        </li>
-                <li> <Link to="/about"> about</Link> </li>
-              </ul>
-
-              <ul className="auth-links">
-                <li onClick={() => setShowSignIn(true)}>Sign In</li>
-                <li> <span>|</span> </li>
-                <li onClick={() => setShowSignUp(true)}>Sign Up</li>
+                <li> <Link className='page-linksList' onClick={hideProducts} to="/">home  </Link>  </li>
+                <li> <Link className='page-linksList' onClick={hideProducts} to="/contact">contacts  </Link> </li>
+                <li> <Link className='page-linksList' onClick={hideProducts} to="/about"> about</Link> </li>
               </ul>
           </div>
 
+
        {/* Icons */}
         <div className="navbar-icons">
-          <button className="icon-button">
-            <FaUser className="icon" />
-          </button>
-          <button className="icon-button cart-button">
-            <FaShoppingCart className="icon" />
-            <span className="cart-badge">3</span>
-          </button>
+            {       
+              <div className="authSection"> 
+                  <button className="user-icon-button">
+                    <FaUser />
+                    <FontAwesomeIcon className='navDropDown' icon={faAngleDown} />
+                  </button>
+
+                  <ul className="auth-links">
+                    <li onClick={() => setShowSignIn(true)}>Sign In</li>
+                    <li onClick={() => setShowSignUp(true)}>Sign Up</li>
+                    <li>Orders</li> {/* link it to the orders page */}
+                  </ul>
+              </div> 
+            }      
+            <button className="cart-button">
+                <Link className='page-linksList' to="/cart">
+                  <FaShoppingCart/>
+                </Link>
+                {totalCount > 0 && <span className="cart-badge">{totalCount}</span> }
+            </button>
         </div>
 
         {/* Mobile menu button */}
         <div className="mobile-menu-button">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes className="icon" /> : <FaBars className="icon" />}
+            {isOpen ? <FaTimes className="mobileDashIcon" /> : <FaBars className="mobileDashIcon" />}
           </button>
         </div>
       </div>
@@ -86,33 +99,14 @@ const NavBar = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="mobile-menu">
-          <ul>
-              <li> <Link to="/"><h4></h4>ome  </Link>        </li>
-              <li> <Link to="/orders"> orders</Link> </li>
-              <li> <Link to="/categories">categories  </Link>        </li>
-              <li> <Link to="/about"> about</Link> </li>
-          </ul>
-
-    {/* smartminds auth links */}
-          <div className="navAcc">
-          <ul className="navListDesign">
-            <li onClick={() => setShowSignIn(true)}>Sign In</li>
-            <li> <span>|</span> </li>
-            <li onClick={() => setShowSignUp(true)}>Sign Up</li>
-          </ul>
+              <ul>
+                  <li> <Link className='mobileList' to="/">home  </Link>  </li>
+                  <li> <Link className='mobileList' to="/contact">contacts </Link>  </li>
+                  <li> <Link className='mobileList' to="/about"> about</Link> </li>
+              </ul>
         </div>
 
-          <div className="mobile-icons">
-            <button className="icon-button">
-              <FaUser className="icon" />
-            </button>
-            <button className="icon-button cart-button">
-              <FaShoppingCart className="icon" />
-              <span className="cart-badge">3</span>
-            </button>
-          </div>
-        </div>
-      )}
+      )} 
     </nav>
 
      {/* showing login popUp */}

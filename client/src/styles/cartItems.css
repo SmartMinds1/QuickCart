@@ -1,0 +1,114 @@
+
+/* syling our Shopping Cart */
+.cart{
+    background-color: var(--background);
+    margin-top: 4rem;
+    height: fit-content;
+}
+.cartHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartHeader p{
+    margin-right: 2rem;
+}
+.cartHeader p span{
+    color:var(--primary);   
+}
+.cartIcon{
+    color:orange;
+}
+.cartIconDiv{
+    width:20rem;
+    height:10rem;
+    margin:auto;
+    margin-top: 2rem;
+}
+.cartBigIcon{
+    font-size: 10rem;
+    margin-left:15%;
+    color: rgba(255, 217, 0, 0.281);
+}
+.cartItemsBox{
+    height: fit-content;
+    width: 100%;
+    padding:2rem;
+}
+.cartItemsBox h3{
+    font-size: var(--font-size-xl);
+}
+.cartItemsBox h3 span{
+    color:var(--primary);
+    font-weight: var(--font-weight-normal);
+}
+.cartItemsList{
+    width: 100%;
+}
+
+.cartItemsList li{
+   line-height: 3rem;
+   margin-left: 10%;
+   width: 100%;
+
+}
+
+.exactList{
+    background-color: rgb(217, 233, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    margin-top: 1rem;
+    
+}
+.removeBtn{
+    background-color: var(--secondary);
+    border:none;
+    width: 4rem;
+    height:2rem;
+    border-radius: 0.2rem;
+    cursor: pointer; 
+    transition:all 300ms;
+    font-size: var(--font-size-nm);
+    padding: 0.3rem;
+}
+
+.removeBtn:hover{
+  filter: brightness(0.85);
+}
+
+.noItem{
+    width: 100%;
+    margin: auto;
+    padding:1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.paymentSection{
+    width:100%;
+    height:20vh;
+    text-align: center;
+    padding:2rem;
+}
+
+.buyBtn{
+    background-color: var(--primary);
+    color:var(--background);
+    font-size: var(--font-size-nm);
+    width: 7rem;
+    height: 2.5rem;
+    border:none;
+    margin:auto;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms;
+    font-weight: var(--font-weight-bold);
+}
+
+.buyBtn:hover{
+    filter: brightness(0.85);
+    cursor:pointer;
+}
