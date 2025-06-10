@@ -67,7 +67,7 @@ const SignUp = ({ closeSignUp, onSuccess }) => {
       <div className="auth-container">
         {/* Header */}
         <div className="auth-header urbanist">
-            <h2> <span className='logo'>QickCart</span></h2>
+            <h2> <span className='logo'>QuickCart</span></h2>
           <button onClick={closeSignUp} className="auth-close-btn">
             ✕
           </button>

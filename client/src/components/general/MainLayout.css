@@ -1,0 +1,42 @@
+.layout{
+    background-color: var(--background);
+    margin-top: 4rem;
+}
+
+.pCategory{
+    margin-top: 1rem;
+    padding:0.5rem;
+    padding-top:0.5rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    position: fixed;
+    top:2rem;
+    width: 100%;
+   
+    background-color:var(--background);
+    z-index: 1100;
+}
+.pCategory p{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-weight-bold);
+}
+.pCategory p span{
+    font-weight: var(--font-weight-thin);
+}
+
+.categorySection{
+    width:100%;
+    height: fit-content;   
+    background-color: red; 
+}
+
+.pageSideBar{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+
+/* display: none; */
+}

@@ -1,0 +1,15 @@
+.globalBtn{
+    width: 7rem;
+    height: 2.3rem;
+    background-color: var(--secondary);
+    font-size: var(--font-size-md);
+    border: none;
+    outline: none;
+    border-radius: var(--spacing-md);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.globalBtn:hover{
+    filter: brightness(0.9);
+}

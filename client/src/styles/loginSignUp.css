@@ -39,7 +39,7 @@
    .auth-header h2 {
     font-size: 1.5rem;
     font-weight: bold;
-  /*   color: black; */
+    color: blue; 
 
   }
   .headerMessage{
@@ -67,7 +67,6 @@
     color: rgb(41, 39, 39);
   }
 
-
   /* Form Elements */
    .auth-input-group {
     margin-bottom: 16px;
@@ -82,7 +81,7 @@
     border: none;
     border-bottom: 1px solid var(--text);
    /*  border-radius: 6px; */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow:var(--box-shadow);
     transition: border-bottom 0.2s, box-shadow 0.2s;
   }
   
@@ -100,6 +99,7 @@
     color: #555;
     font-size: 1rem;
   }
+
   /* This is for the password EYE ICON for register */
   .password-toggle-icon-register {
     position: absolute;
@@ -113,8 +113,8 @@
   /* Submit Button for the popUp */
    .auth-submit-btn {
     width: 90%;
-    background-color: var(--text);
-    color: aliceblue;
+    background-color: blue;
+    color:var(--background); 
     padding: 12px;
     border: none;
     border-radius: 6px;
@@ -126,7 +126,7 @@
   }
   
    .auth-submit-btn:hover {
-    filter: brightness(0.9);
+    background-color: var(--faded-text);
   }
   .authOption{
     color:rgb(48, 47, 49);
@@ -165,7 +165,7 @@
   margin-bottom: 1.5rem;
 }
 .logo{
-  color:var(--text);
+  color:blue;
 }
   /* Now making my website more responsive */
 /*Mobiles and Tablets*/ 

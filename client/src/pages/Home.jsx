@@ -1,11 +1,14 @@
-import React from 'react'
-import NavBar from '../components/Home/NavBar'
-import Footer from '../components/Footer/Footer'
+import React from 'react';
+import  "../styles/Home.css";
+
 
 const Home = () => {
-  return (
-    <div>
-     
+
+return (
+    <div className='homePage'>
+
+        
+
     </div>
   )
 }

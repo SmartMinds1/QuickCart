@@ -8,10 +8,12 @@
 
 /* Global CSS Variables */
 :root {
+  
 /*  light mode colors */
-  --background: aliceblue;
+  --background: aliceblue; /* rgb(249, 251, 253) */
   --text:#000000;
-  --primary:#388e3c;
+  --faded-text:#202020;
+  --primary:#1f7e23; /* #388e3c */
   --secondary:#ffc107;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
@@ -44,6 +46,8 @@
   --font-size-xl: 1.5rem;
   --font-size-xxl: 2rem;
 
+
+  --font-weight-thin: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 

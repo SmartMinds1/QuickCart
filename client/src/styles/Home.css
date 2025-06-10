@@ -1,0 +1,9 @@
+.homePage{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+/* background-color: rgb(147, 214, 103); */
+}
+
+

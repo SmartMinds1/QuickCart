@@ -1,0 +1,196 @@
+.about{
+    padding-top: 0.1rem;
+    background-color: var(--background);
+}
+
+.div1{
+    background-color: var(--background);
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboutUs{
+    width:40%;
+    height: 60vh;
+    margin-top: 4rem;
+    padding:2rem;
+    background-color: aliceblue;
+    box-shadow: var(--box-shadow);
+  
+/*     background-color: rgb(45, 49, 53); */
+
+}
+.abth1 h1{
+    font-size: 1.8rem;
+  /*   color: var(--background); */
+  color:var(--text);
+}
+.abth1 h1 span{
+    color:var(--secondary);
+}
+.abtp{
+    width: 70%;
+    margin:auto;
+   /*  color:var(--background); */
+   color:var(--text);
+   line-height: 1.5rem;
+}
+
+
+.introImage{
+    width:40%;
+    height: 68vh;
+/*  background-color: rgb(137, 214, 35); */
+    background-image: url(../assets/general/cart5-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.introImgCaption{
+    background-color: var(--background);
+    width:100%;
+    height:10rem;
+    
+}
+.introImgCaption p{
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+
+}
+.introImgCaption p span{
+    color:black;
+    font-weight: var(--font-weight-bold);
+}
+
+
+.div2{
+    width: 100%;
+    height: 10rem;
+    margin-top: 1rem;
+}
+.div2 h1{
+    font-size: 1.8rem;
+    color:var(--text);
+    margin-left: 10%;
+    
+}
+.div2 h1 span{
+    font-weight: 300;
+}
+.div2 p{
+  text-align: justify;
+  width: 60%;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+
+/* section 3 */
+.div3{
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div3 h3{
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    width:fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+}
+.div3 p{
+    line-height: 1.5rem;
+}
+.mission{
+    width: 30%;
+ 
+}
+
+.vision{
+    width: 30%;
+}
+
+
+/* section4 */
+.div4{
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+}
+.div4 h3{
+    font-size: 1.8rem;
+    width:40%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+   
+}
+.div4 p{
+    line-height: 1.5rem;
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+}
+.div4 h3 span{
+    font-weight: 300;
+}
+
+
+/* section 5 */
+.div5{
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+
+}
+.teamImages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mb{
+    width: 15rem;
+    height: 15rem; 
+}
+.div5 h3{
+    font-size: 1.8rem;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.member1{
+   width: 15rem;
+   height: 15rem; 
+   background-image: url(../assets/general/member1.jpeg);
+   background-size: cover;
+
+
+}
+.member2{
+    background-image: url(../assets/general/member2.jpeg);
+    background-size: cover;
+}
+.member3{
+    background-image: url(../assets/general/member4.jpeg);
+    background-size: cover;
+    background-position-y:20% ;
+    width: 13rem;
+}
