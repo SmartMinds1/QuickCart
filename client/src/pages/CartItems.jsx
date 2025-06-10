@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/cartItems.css";
 import { useCart } from "../context/CartContext";
 import NavBar from "../components/Home/NavBar";
-import Footer from "../components/general/Footer";
+import Footer from "../components/Footer/Footer.jsx";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./MainLayout.css";
 import NavBar from "../Home/NavBar";
 import { Outlet} from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer.jsx";
 import CategoryBar from "./CategoryBar";
 import Sneakers from "../../products/shoes/Sneakers";
 import Official from "../../products/shoes/Official";

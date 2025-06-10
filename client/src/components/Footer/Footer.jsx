@@ -38,16 +38,16 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-heading">Connect</h3>
           <div className="social-links">
-            <a href="" aria-label="Facebook">
+            <a href="facebook.com" aria-label="Facebook">
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="" aria-label="Twitter">
+            <a href="twitter.com" aria-label="Twitter">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="" aria-label="Instagram">
+            <a href="instagram.com" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="" aria-label="Pinterest">
+            <a href="pinterest.com" aria-label="Pinterest">
               <i className="fab fa-pinterest"></i>
             </a>
           </div>
