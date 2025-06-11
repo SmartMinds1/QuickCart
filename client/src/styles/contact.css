@@ -25,10 +25,17 @@
   
   .heading-text {
     font-size: 1.2rem;
-    color: rgb(103, 145, 187);
+    background-color: var(--background );
     max-width: 700px;
-    line-height: 1.5;
+    line-height: 1.5rem;
   }
+  .heading-text span{
+   font-size: 2rem;
+   font-weight: 300;
+   color: rgb(103, 145, 187);
+
+  }
+
   
   /* Contact details wrapper */
   .contact-details {

@@ -8,12 +8,11 @@
 
 /* Global CSS Variables */
 :root {
-  
 /*  light mode colors */
   --background: aliceblue; /* rgb(249, 251, 253) */
   --text:#000000;
   --faded-text:#202020;
-  --primary:#1f7e23; /* #388e3c */
+  --primary:#018d7f; /* #388e3c */
   --secondary:#ffc107;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
