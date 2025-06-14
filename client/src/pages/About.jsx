@@ -17,7 +17,6 @@ const About = ()=>{
                     Our mission and value is to facilitate a 
                     Seamless shopping platform which offers quality
                     items that are within budget</p>
-
                     <br />
 
                   <p>

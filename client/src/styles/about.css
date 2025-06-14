@@ -12,8 +12,8 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
-
 }
+
 .aboutUs{
     width:35rem;
     height: 60vh;
@@ -24,8 +24,7 @@
 }
 .abth1 h1{
     font-size: 1.8rem;
-  /*   color: var(--background); */
-  color:var(--text);
+    color:var(--text);
 }
 .abth1 h1 span{
     color:var(--secondary);
@@ -162,9 +161,10 @@
 }
 .div5 h3{
     font-size: 1.8rem;
-    width: 30%;
+    width: 50%;
     margin: auto;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .member1{
    width: 15rem;
@@ -179,13 +179,14 @@
 .member3{
     background-image: url(../assets/general/member4.jpeg);
     background-size: cover;
-    background-position-y:20% ;
+    background-position-y:20%;
     width: 13rem;
 }
 
 @media (max-width:768PX) {
     .div1{
         justify-content: space-evenly;
+        margin-bottom: -3rem;
     }
     .aboutUs{
         width:35rem;
@@ -203,18 +204,48 @@
     
     .div2{
         height: fit-content;
-        margin-bottom: 8rem;
     }
     .div2 h1{
-        margin-left: 5%;
-        
+        margin-left: 30%;
+        margin-bottom: 0.5rem; 
     }
 
     .div2 p{
       text-align: justify;
       width: 85%;
     }
+    
+/*  mission and vision */
+.div3{
+    height: fit-content;
+    flex-direction: column;
+    
+}
+.mission{
+    width: 80%;
+    margin-top: 2rem;
+}
+.vision{
+    width: 80%;
+}
 
+/* what makes us great */
+.div4{
+    height: fit-content;
+
+}
+.div4 h3{
+    width:65%;
+}
+.div4 p{
+    width: 80%;
+}
+
+/* section 5 */
+.teamImages{
+    flex-wrap: wrap;
+    gap:3rem
+}
 
     
 }
