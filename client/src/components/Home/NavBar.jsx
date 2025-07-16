@@ -43,8 +43,6 @@ const NavBar = ({hideProducts}) => {
     setShowForgotPass(true);
   };
 
-  
-
   return (
     <>
     <nav className="navbar">
@@ -54,7 +52,7 @@ const NavBar = ({hideProducts}) => {
             <span>QuickCart</span>
           </div>
 
-         {/* Desktop Navigation */}
+        {/* Desktop Navigation */}
           <div className="navbar-links">
               <ul className="page-links">
                 <li> <Link className='page-linksList' onClick={hideProducts} to="/">home  </Link>  </li>
@@ -64,7 +62,7 @@ const NavBar = ({hideProducts}) => {
           </div>
 
 
-       {/* Icons */}
+        {/* Icons */}
         <div className="navbar-icons">
             {       
               <div className="authSection"> 

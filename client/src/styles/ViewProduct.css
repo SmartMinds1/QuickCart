@@ -1,0 +1,172 @@
+.viewProduct{
+  background-color: var(--background);
+  width: 1000px;
+  height: 30rem;
+  overflow-y: scroll;
+}
+.myHr{
+  width:80%;
+  height: 1px;
+  background-image: linear-gradient(to right, aliceblue, black, aliceblue);
+  margin:auto;
+}
+
+.view-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color:var(--text);
+  position:absolute;
+  width:73%;
+}
+
+.view-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: #6f7b8f;
+  width: 100%;
+  text-align: right;
+  margin-right: 0.2rem;
+}
+ .view-close-btn:hover {
+  color: rgb(41, 39, 39);
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+ /*  THis is the initial set up for this page */
+ .itmBox{
+  width:100%;
+  height: 59vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+/*   background-color: red; */
+ }
+ 
+ .itm{
+  height: 26rem;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+/*   background-color: yellow; */
+
+ }
+ .itmImg{
+  width:96%;
+  height:18rem;
+  border-radius: 0.5rem;
+  background-image: url(../assets/shoes/blackSneakers.jpeg);
+  background-size: cover;
+  background-position-y: 40%;
+  box-shadow: var(--box-shadow);
+
+  margin-bottom: 1rem;
+
+
+ }
+.subImgsBox{
+  width: 70%;
+  height:6.5rem;
+/*   background-color: purple; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.Bx{
+  width:6rem;
+  height:6rem;
+  background-size: contain;
+  border-radius: 1rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.Bx:hover{
+  transform:scale(1.1);
+}
+.subImg1{
+  background-image: url(../assets/shoes/blackSneakers1.jpeg);
+}
+.subImg2{
+background-image: url(../assets/shoes/blackSneakers2.jpeg);
+}
+.subImg3{
+  background-image: url(../assets/shoes/blackSneakers4.jpeg);
+
+}
+
+
+/* this is the second part of the items details */
+.itemDetails{
+/*   background-color: rgb(122, 255, 122); */
+  width: 90%;
+  margin: auto;
+  box-shadow: var(--box-shadow);
+  padding:0.5rem;
+  height: fit-content;
+}
+
+.itemSpecs{
+/*   background-color: orange; */
+  margin-left: 10%;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  list-style-type: circle;
+}
+.itemSpecs span{
+font-weight: bold;
+color:rgb(43, 43, 43);
+
+}
+.itemSpecs li:nth-child(odd)::marker {
+  color: var(--primary);
+}
+
+
+.itemBtns{
+  height: 4rem;
+  width: 90%;
+  margin: auto;
+/*   background-color: black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap:6%;
+  padding: 1rem;
+}
+.itemBtns button{
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.3rem;
+  padding-bottom:0.2rem;
+  background-color: var(--secondary);
+}
+.itemBtns button:nth-child(2){
+  background-color: var(--background);
+  border:1px solid var(--secondary);
+}
+
+.itemBtns button:hover{
+  filter:brightness(0.85);
+}
+ 

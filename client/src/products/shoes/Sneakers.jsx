@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import ItemBox from "../../components/general/ItemBox";
 import "./Shoes.css";
 
 const Sneakers = () => {
+  
     return(
         <div className="shoeSection">
                       <div className="sneakers1 itemImage">
-                        <ItemBox
+                          <ItemBox
                             itemName="Black Lether Shoes"
                             itemDesc="Office leather shoes, Durable for all weather."
                             itemPrice="$45"
                           />
                       </div>
+
                       <div className="sneakers2 itemImage">
                         <ItemBox 
                             itemName="Canvas"
@@ -173,6 +175,7 @@ const Sneakers = () => {
                             itemPrice="$15"
                           />
                       </div>
+
                 </div>
     )
 }

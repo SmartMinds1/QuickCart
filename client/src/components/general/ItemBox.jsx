@@ -4,8 +4,14 @@ import "./itemBox.css";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import ViewProduct from "../../pages/ViewProduct";
+import ProductModal from "../../components/popUps/ProductModal";
 
 const ItemBox = ({ itemName, itemDesc, itemPrice }) => {
+  
+/*let us try to show the item details Modal */
+  const[showModal, setShowModal]=useState(false)
+
   const { updateCart } = useCart(); // Get updateCart from context
   
   const [itemCount, setItemCount] = useState(0);
@@ -25,6 +31,7 @@ const ItemBox = ({ itemName, itemDesc, itemPrice }) => {
   return (
     <div>
       <div className="item">
+        <div className="itemShade" onClick={()=>setShowModal(true)}></div>
         <div className="itemDescription">
           <h4>{itemName}</h4>
           <h6>{itemDesc}</h6>
@@ -54,6 +61,14 @@ const ItemBox = ({ itemName, itemDesc, itemPrice }) => {
           </div>
         )}
       </div>
+
+      {/*showing login popUp */}
+          {showModal && (
+            <ProductModal isOpen={showModal} onClose={() => setShowModal(false)}>
+              {/*Any popUP right here */}
+              <ViewProduct closeView={() => setShowModal(false)}/>
+            </ProductModal>
+          )}
     </div>
   );
 };

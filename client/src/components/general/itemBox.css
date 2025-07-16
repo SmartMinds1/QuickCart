@@ -8,6 +8,11 @@
     box-shadow: var(--box-shadow);
     position: relative;
 }
+.itemShade{
+    width: 100%;
+    height: 9rem;
+    background-color: transparent;
+}
 
 .itemDescription{
     background-color: var(--background);
